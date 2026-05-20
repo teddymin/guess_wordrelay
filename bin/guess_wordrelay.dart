@@ -1,27 +1,4 @@
-/*
-1. 시작한다
-2. ai가 단어를 말한다
-3. 사용자가 이에 해당하는 설명을 적는다
-4. 설명에 해당하는 단어가 있다면 적는다
-7. 만약 단어를 찾지 못했다면 '단어를 찾지 못했습니다' 라고 출력한다.
-8. 다시 글자를 지우고 3번으로 돌아간다.
-5. 만약 끝말잇기 룰에 맞지 않는다면 단어를 지우고 '끝말잇기 룰에 맞지 않습니다' 라고 출력한다
-6. 다시 글자를 지우고 3번으로 돌아간다
-9. 먄약 해당하는 단어가 끝말잇기 룰에 맞는다면 가만히 두고 
-10. 2번으로 돌아간다.
-11. 만일 ai가 단어를 말하지 못하거나 인간이 GG 또는 시간이 초과된다면 게임이 종료된다.
 
-필요한 함수
-0. 게임을 시작하는 함수                                      = start_game()
-1. ai가 끝말잇기 룰에 맞는 단어를 말하는 함수                 = ai_turn()
-2. 글자를 지우는 함수                                        = rm_line()
-3. 끝말잇기 룰에 맞는지 확인하는 함수                         = dict_check()
-4. 게임이 종료되는 함수 
-
-
-
-
-*/
 import 'dart:io';
 import 'dart:convert';
 import 'dart:async';
@@ -34,7 +11,7 @@ final console = Console();
 
 String? user_name;
 Set<String> used_words = {};
-String api_key = 'C09336322E6D5FC8D9C74703630D1C6C';
+String api_key = 'YOUR_API_KEY';
 
 void main() async{
   start_game();
